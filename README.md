@@ -208,7 +208,13 @@ Change factorial(-5) par factorial(20)
 
 Change reverseString("JNI is powerful!") par reverseString("") :  
  <img width="1409" height="937" alt="image" src="https://github.com/user-attachments/assets/a9d7187e-84cc-409a-abb9-b235ef56752c" />  
- ### Résultat attendu : Texte inverse : (chaîne vide, rien après les deux points)
+ ### Résultat attendu : Texte inverse : (chaîne vide, rien après les deux points)  
+  # Résultat attendu : Texte inverse : (chaîne vide, rien après les deux points)    
+  
+  <img width="1409" height="937" alt="image" src="https://github.com/user-attachments/assets/1e9a28cf-6b7e-4333-a55a-20996871ad28" />  
+  
+  Résultat attendu : Somme du tableau = 0
+
 
 
 
