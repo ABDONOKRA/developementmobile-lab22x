@@ -63,3 +63,106 @@ libnative-lib.so, chargée via System.loadLibrary("native-lib")
 
   <img width="1240" height="556" alt="image" src="https://github.com/user-attachments/assets/117f2307-6b51-4017-bf13-636a747fbe89" />
 
+  # Étape 5 — Écrire le code natif C++    
+  
+  # JNI Demo Lab
+
+## Fichiers du projet
+```
+app/src/main/java/com/example/jnidemo/MainActivity.java
+app/src/main/cpp/native-lib.cpp
+app/src/main/cpp/CMakeLists.txt
+```
+
+## native-lib.cpp
+
+```cpp
+#include <jni.h>
+#include <algorithm>
+#include <climits>
+#include <android/log.h>
+
+#define LOGI(...) __android_log_print(ANDROID_LOG_INFO, "NativeLib", __VA_ARGS__)
+#define LOGE(...) __android_log_print(ANDROID_LOG_ERROR, "NativeLib", __VA_ARGS__)
+
+extern "C" {
+
+JNIEXPORT jstring JNICALL
+Java_com_example_jnidemo_MainActivity_helloFromJNI(JNIEnv *env, jobject /* this */) {
+    LOGI("helloFromJNI called");
+    return env->NewStringUTF("Hello from C++!");
+}
+
+JNIEXPORT jint JNICALL
+Java_com_example_jnidemo_MainActivity_factorial(JNIEnv *env, jobject /* this */, jint n) {
+    LOGI("factorial called with n = %d", n);
+    
+    if (n < 0) return -1;
+    
+    jint result = 1;
+    for (jint i = 2; i <= n; i++) {
+        if (result > INT_MAX / i) return -2;
+        result *= i;
+    }
+    return result;
+}
+
+JNIEXPORT jstring JNICALL
+Java_com_example_jnidemo_MainActivity_reverseString(JNIEnv *env, jobject /* this */, jstring str) {
+    const char *input = env->GetStringUTFChars(str, nullptr);
+    if (input == nullptr) return nullptr;
+    
+    std::string cppStr(input);
+    std::reverse(cppStr.begin(), cppStr.end());
+    
+    env->ReleaseStringUTFChars(str, input);
+    return env->NewStringUTF(cppStr.c_str());
+}
+
+JNIEXPORT jint JNICALL
+Java_com_example_jnidemo_MainActivity_sumArray(JNIEnv *env, jobject /* this */, jintArray arr) {
+    jint *elements = env->GetIntArrayElements(arr, nullptr);
+    if (elements == nullptr) return 0;
+    
+    jsize length = env->GetArrayLength(arr);
+    jint sum = 0;
+    
+    for (jsize i = 0; i < length; i++) {
+        sum += elements[i];
+    }
+    
+    env->ReleaseIntArrayElements(arr, elements, JNI_ABORT);
+    return sum;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
