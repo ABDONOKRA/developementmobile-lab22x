@@ -191,10 +191,20 @@ change factorial(10) par factorial(-5)
 Résultat attendu : Erreur factoriel, code = -1    
 ## Ressultat :
 
- <img width="1409" height="937" alt="image" src="https://github.com/user-attachments/assets/bff4608a-ca84-4a52-93d1-38b069722d64" />
+ <img width="1409" height="937" alt="image" src="https://github.com/user-attachments/assets/bff4608a-ca84-4a52-93d1-38b069722d64" />  
+ ### Erreur factoriel, code = -1 — exactement le résultat attendu ! Le code C++ a bien détecté la valeur négative.    
+ 
+ # Test 2 — Dépassement (overflow)
+Change factorial(-5) par factorial(20) 
+
+  <img width="1409" height="937" alt="image" src="https://github.com/user-attachments/assets/08508d6e-e8a3-4bef-8395-55280e8e4d82" />
 
 
+## Test 3 — Chaîne vide  
 
+Change reverseString("JNI is powerful!") par reverseString("") :  
+ <img width="1409" height="937" alt="image" src="https://github.com/user-attachments/assets/a9d7187e-84cc-409a-abb9-b235ef56752c" />  
+ ### Résultat attendu : Texte inverse : (chaîne vide, rien après les deux points)
 
 
 
