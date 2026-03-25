@@ -178,7 +178,21 @@ Voici le récapitulatif des opérations effectuées via l'interface native (C++)
 | `Texte inverse : !lufrewop si JNI` | ✅ |
 | `Somme du tableau = 150` | ✅ |  
 
-# Étape 9 — Vérifier les logs natifs dans Logcat
+# Étape 9 — Vérifier les logs natifs dans Logcat  
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/8de71fe3-cdad-44b5-bd8f-150f07f4e0e5" />  
+# Étape 10 — Tests guidés  
+
+
+  Maintenant on va tester des cas limites. Pour ça, modifie temporairement MainActivity.java en changeant les valeurs appelées.
+Test 1 — Valeur négative :  
+change factorial(10) par factorial(-5)  
+
+
+Résultat attendu : Erreur factoriel, code = -1    
+## Ressultat :
+
+ <img width="1409" height="937" alt="image" src="https://github.com/user-attachments/assets/bff4608a-ca84-4a52-93d1-38b069722d64" />
+
 
 
 
