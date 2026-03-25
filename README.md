@@ -33,7 +33,10 @@ SDK Android configuré ;
 NDK, CMake et LLDB disponibles dans le SDK Manager ;  
 
 connaissances de base sur Activity, layout XML et Java.  
-<img width="1112" height="369" alt="image" src="https://github.com/user-attachments/assets/7e69733e-a3ef-43dc-955c-40082f10cb69" />    
+<img width="1112" height="369" alt="image" src="https://github.com/user-attachments/assets/7e69733e-a3ef-43dc-955c-40082f10cb69" />         
+
+<img width="1057" height="832" alt="image" src="https://github.com/user-attachments/assets/199bc16e-7fa8-49d5-b5c1-922b828f2881" />
+
 
 # Avant de coder, il est important de distinguer les briques :  
 
@@ -52,5 +55,11 @@ Bibliothèque partagée .so
 
 Le code natif Android est généralement empaqueté dans une bibliothèque partagée,   
 par exemple  
-libnative-lib.so, chargée via System.loadLibrary("native-lib")
+libnative-lib.so, chargée via System.loadLibrary("native-lib")    
+
+# Étape 4 — Configurer le fichier CMakeLists.txt    
+
+``` app/src/main/cpp/CMakeLists.txt ```
+
+  <img width="1240" height="556" alt="image" src="https://github.com/user-attachments/assets/117f2307-6b51-4017-bf13-636a747fbe89" />
 
