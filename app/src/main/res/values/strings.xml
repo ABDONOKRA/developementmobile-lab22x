@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">JNIDemo</string>
+    <string name="jni_demo_title">JNI Demo Results</string>
+    <string name="label_greeting">Greeting</string>
+    <string name="label_math">Mathematical Ops</string>
+    <string name="label_string">String Manipulation</string>
+    <string name="label_array">Array Processing</string>
+</resources>
