@@ -217,7 +217,15 @@ Change reverseString("JNI is powerful!") par reverseString("") :
 
 
 
+### ✅ Test 4 réussi ! Tous les tests sont passés ! 🎉
 
+| Test | Résultat | Status |
+| :--- | :--- | :---: |
+| `factorial(10)` | `3628800` | ✅ |
+| `factorial(-5)` | `code = -1` | ✅ |
+| `factorial(20)` | `code = -2` | ✅ |
+| `reverseString("")` | chaîne vide | ✅ |
+| `sumArray({})` | `0` | ✅ |
 
 
 
