@@ -162,7 +162,24 @@ Java_com_example_jnidemo_MainActivity_sumArray(JNIEnv *env, jobject /* this */, 
 
 -> Les 4 TextView ont bien les ids : tvHello, tvFact, tvReverse, tvArray ✅  
 
--> Les erreurs rouges dans MainActivity.java ont disparu ✅  
+-> Les erreurs rouges dans MainActivity.java ont disparu ✅    
+# Étape 8 — Compiler et exécuter   
+<img width="594" height="958" alt="image" src="https://github.com/user-attachments/assets/9ef24b53-6a3e-4cfa-8b0b-b45bb9b486c5" />    
+##  Résultats des tests JNI
+
+Voici le récapitulatif des opérations effectuées via l'interface native (C++) :
+
+| Résultat | Status |
+| :--- | :---: |
+| `Hello from C++ via JNI !` | ✅ |
+| `Factoriel de 10 = 3628800` | ✅ |
+| `Texte inverse : !lufrewop si JNI` | ✅ |
+| `Somme du tableau = 150` | ✅ |  
+
+# Étape 9 — Vérifier les logs natifs dans Logcat
+
+
+
 
 
 
