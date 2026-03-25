@@ -179,7 +179,9 @@ Voici le récapitulatif des opérations effectuées via l'interface native (C++)
 | `Somme du tableau = 150` | ✅ |  
 
 # Étape 9 — Vérifier les logs natifs dans Logcat  
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/8de71fe3-cdad-44b5-bd8f-150f07f4e0e5" />  
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/8de71fe3-cdad-44b5-bd8f-150f07f4e0e5" />    
+
+  
 # Étape 10 — Tests guidés  
 
 
@@ -188,10 +190,12 @@ Test 1 — Valeur négative :
 change factorial(10) par factorial(-5)  
 
 
-Résultat attendu : Erreur factoriel, code = -1    
+Résultat attendu : Erreur factoriel, code = -1      
+
 ## Ressultat :
 
- <img width="1409" height="937" alt="image" src="https://github.com/user-attachments/assets/bff4608a-ca84-4a52-93d1-38b069722d64" />  
+ <img width="1409" height="937" alt="image" src="https://github.com/user-attachments/assets/bff4608a-ca84-4a52-93d1-38b069722d64" />    
+ 
  ### Erreur factoriel, code = -1 — exactement le résultat attendu ! Le code C++ a bien détecté la valeur négative.    
  
  # Test 2 — Dépassement (overflow)
