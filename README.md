@@ -137,6 +137,33 @@ Java_com_example_jnidemo_MainActivity_sumArray(JNIEnv *env, jobject /* this */, 
 
 }
 ```
+## Explication du code C++
+
+### Les includes et macros
+
+```cpp
+#include <jni.h>          // Types JNI (jstring, jint, etc.)
+#include <algorithm>       // Pour std::reverse
+#include <climits>         // Pour INT_MAX
+#include <android/log.h>   // Pour écrire dans Logcat
+```
+
+# Étape 6 — Déclarer les méthodes natives côté Java  
+<img width="1296" height="981" alt="image" src="https://github.com/user-attachments/assets/83c2fe78-709d-408b-9a66-9ee6670e90d1" />      
+-> Les 4 méthodes native sont déclarées ✅  
+
+-> Le bloc static charge bien "native-lib" ✅  
+
+-> Les 4 TextView sont appelés ✅  
+
+
+# Étape 7 — Créer le layout XML    
+<img width="1296" height="981" alt="image" src="https://github.com/user-attachments/assets/6af5567b-e48a-423a-bfd5-a726e3b98e8c" />  
+
+-> Les 4 TextView ont bien les ids : tvHello, tvFact, tvReverse, tvArray ✅  
+
+-> Les erreurs rouges dans MainActivity.java ont disparu ✅  
+
 
 
 
